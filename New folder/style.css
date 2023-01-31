@@ -1,11 +1,10 @@
 html {
-	background: #000000 url(https://unsplash.it/1500/1000?image=881&blur=5);
+	background: #000000ee;
 	background-size: cover;
 	font-family: "helvetica neue";
 	text-align: center;
 	font-size: 10px;
 }
-
 body {
 	margin: 0;
 	font-size: 2rem;
@@ -30,19 +29,23 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	transform: translateY(-3px);
 }
 
 .hand {
 	width: 50%;
-	height: 6px;
-	background: black;
+	height: 5px;
+	background: rgb(255, 255, 255);
 	position: absolute;
 	top: 50%;
-	transform-origin: 100%; /* is the point around which a transformation is applied */
-	transform: rotate(90deg);
+	transform-origin: 100%;
 	transition: all 0.05s;
 	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour-hand {
+	height: 5.5px;
+	width: 40%;
+	top: 50%;
+	left: 10%;
 }
 .red {
 	background: rgba(255, 0, 0, 0.589);
